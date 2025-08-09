@@ -6,7 +6,7 @@ const Convert = () => {
   const [longUrl, setLongUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
   const [shortUrlInput, setShortUrlInput] = useState('');
-  const base_url = 'http://localhost:8000/api';
+  const base_url = 'https://assignment-12in.onrender.com';
   const handleConvert = async () => {
     try {
       const res = await axios.post(`${base_url}/shorten`, { longUrl });
