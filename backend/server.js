@@ -7,7 +7,7 @@ dotenv.config();
 const app=express();
 app.use(express.json());
 app.use(cors({
-    origin: ["http://localhost:5173", "https://assignment-1-3zh2.onrender.com"],
+    origin: ["https://assignment-1-3zh2.onrender.com"],
     methods: ["GET", "POST"],
     credentials: true
 }));
