@@ -6,7 +6,7 @@ const Convert = () => {
   const [longUrl, setLongUrl] = useState('');
   const [shortUrl, setShortUrl] = useState('');
   const [shortUrlInput, setShortUrlInput] = useState('');
-  const base_url = 'https://assignment-12in.onrender.com';
+  const base_url = 'https://assignment-12in.onrender.com/api';
   const handleConvert = async () => {
     try {
       const res = await axios.post(`${base_url}/shorten`, { longUrl });
@@ -26,7 +26,7 @@ const Convert = () => {
 
     try {
       const shortCode = shortUrlInput.split('/').pop();
-      const res = await axios.get(`${base_url}//${shortCode}`);
+      const res = await axios.get(`${base_url}/${shortCode}`);
       window.open(res.data.redirect, '_blank');
       toast.success("Successfully redirected");
     } catch (error) {
