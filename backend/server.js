@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import dotenv from "dotenv"
+import dotenv from "dotenv";
 import {connect} from "./connection/connectDb.js"
 import urlroutes from "./routes/urlroutes.js"
 dotenv.config();
