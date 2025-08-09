@@ -4,7 +4,7 @@ import { toast } from 'react-toastify';
 
 const VisitAll = () => {
   const [urls, setUrls] = useState([]);
-  const base_url = 'http://localhost:8000/api';
+  const base_url = 'https://assignment-12in.onrender.com';
 
   useEffect(() => {
     const fetchUrls = async () => {
